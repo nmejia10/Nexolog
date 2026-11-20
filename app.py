@@ -360,7 +360,6 @@ with st.expander("Notas metodológicas y datos de respaldo", expanded=False):
     - **Costo medio:** promedio de `costo_operativo_miles_cop`, en miles de COP por envío.
     - **Advertencia:** las categorías de retraso son operativas, no evidencias de causalidad.
       Los datos no contienen el costo de los posibles pilotos ni resultados contrafactuales.
-    - **Alcance:** todos los registros son simulados y no representan una operación real.
     """)
     st.download_button(
         "Descargar envíos de la selección (CSV)",
@@ -369,9 +368,3 @@ with st.expander("Notas metodológicas y datos de respaldo", expanded=False):
         mime="text/csv",
         use_container_width=False,
     )
-
-st.markdown(
-    '<p class="nx-footnote">NexoLog · Simulación educativa de DATA1002 · '
-    'Los resultados no corresponden a una empresa real.</p>',
-    unsafe_allow_html=True,
-)
